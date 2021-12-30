@@ -20,3 +20,10 @@ print(10*"Hello")#print ten times, only valid by string
 
 #and we have normal arithmatic sign for calculations like +,-,*,/,%, ** (Exponent/use as power), // (Floor Division/ 9//2 = 4 and 9.0//2.0 = 4.0, -11//3 = -4, -11.0//3 = -4.0)
 
+""" Normal SWAP using coma
+    
+    a=12
+    b=25
+    a, b=b, a
+    print(a,b)
+"""
