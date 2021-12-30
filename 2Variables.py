@@ -27,3 +27,7 @@ print(10*"Hello")#print ten times, only valid by string
     a, b=b, a
     print(a,b)
 """
+
+
+
+#in python we write and and or symbol as 'and' and 'or' keywords
