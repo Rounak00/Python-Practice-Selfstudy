@@ -33,3 +33,5 @@ fruit.pop()#remove last element
 tp=(1,4,"apple",0.5)
 
 print(tp)#print
+
+#youcan only delete full tuple by using ->  del tuplename
