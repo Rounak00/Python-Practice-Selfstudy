@@ -25,3 +25,11 @@ fruit.remove(item)#item remove
 
 fruit.pop()#remove last element
 
+"""TUPLE"""
+
+#same as list but here tuple in imutable(or we cant change the values)
+#if we want to make a e1elemnt tuple then we write this tp=(22,)
+
+tp=(1,4,"apple",0.5)
+
+print(tp)#print
