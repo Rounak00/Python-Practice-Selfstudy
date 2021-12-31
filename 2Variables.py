@@ -28,6 +28,6 @@ print(10*"Hello")#print ten times, only valid by string
     print(a,b)
 """
 
-
+#there are membership operators which are 'in' and 'not in'
 
 #in python we write and and or symbol as 'and' and 'or' keywords
