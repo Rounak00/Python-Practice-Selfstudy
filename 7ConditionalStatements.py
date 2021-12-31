@@ -12,7 +12,10 @@ if 5 in li:
   print("found")
  #we have both 'not in' and 'in' keywords and its returns boolean values  
 
+"""Shorthand if_else 
+    print("even") if num%2==0 else print("Odd")
 
+"""
 
 #Switch case
  switcher = {
