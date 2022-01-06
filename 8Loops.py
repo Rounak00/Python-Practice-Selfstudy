@@ -7,6 +7,10 @@ li=[1,2,3,4,5]
 for item, num in li2:
   print(item,num)
   
+#if we want to print somthing 45 times we can write this also
+for i in range(45) #range is not variable here
+  
+  
   
 """while loop"""
 i=1
