@@ -5,7 +5,7 @@ print("Hello World")
 """For multiline Comment"""
 
 
-#this make two lines in on line and we can add space or other thing in end
+#this make two lines in another line and we can add space or other thing in end
 print("First line", end="")
 print("First line")
 
