@@ -8,6 +8,7 @@ print(mystr[0:4])#its called string slicing (start from 0 and then stop at 4 don
 
 print(mtstr[0:8:2])#here last is skip sequence so its print =>   HloSr
 
+print(mtstr[::-1])#Print in revverse order
 """*If we use negetive numbers in string slicing then its represent from back
    *if we use negetive in last skip sequence then it shows string fully from back with simple -1 and if we use -2 then from back but skip in every second character
    
@@ -33,3 +34,5 @@ print(mystr.upper())#make string in uppercase
 
 print(mystr.replace("item","new item"))
 
+
+"heloo my name is {name} and age is {age}".format(name="Rounak", age=25, weight=445)

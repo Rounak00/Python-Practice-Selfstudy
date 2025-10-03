@@ -1,3 +1,6 @@
+#Rules -> Non Indexing mutable DS, keys are immutable but values cam mutable, keys should be unique
+# 2D/3D dictionary possible here
+
 #Dictionary is key value pairs
 
 di={"even":2, "odd":2, "complex":{"x":"5x-j","y":"5x-j"}}

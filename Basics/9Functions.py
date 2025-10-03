@@ -1,3 +1,10 @@
+# Build in function
+min,max,sum -> send tuple or list or string
+ord,help,abs,pow,id,round,len,divmod
+
+# Built in modules
+Math, Os, time, Random
+
 def function1():
   print("Hello")
   

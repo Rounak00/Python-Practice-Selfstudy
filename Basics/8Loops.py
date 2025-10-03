@@ -1,4 +1,12 @@
+#Range
+list(range(1,11)) -> [1...10]
+list(range(15)) -> [0,1,2....14]
+list(range(1,11,3)) -> [1,4,7,10]
+
+*> In Python for loop run on range or  sequence like string list etc
+
 li=[1,2,3,4,5]
+
 """For Loop"""
  for item in li :
     print(item)
@@ -33,8 +41,8 @@ while(i<10):
    
  i=1
  while(true)
- i++
- if i%5==0:
-  continue()#skip for those numbers that are divisable by 5
-  
-print(i)  
+  i++
+  if i%5==0:
+    continue()#skip for those numbers that are divisable by 5
+    
+  print(i)  
