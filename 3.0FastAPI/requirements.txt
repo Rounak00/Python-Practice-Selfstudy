@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+motor
+beanie
+pydantic
+python-dotenv
+
+=>
+pip install -r requirements.txt

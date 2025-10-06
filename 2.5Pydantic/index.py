@@ -229,7 +229,7 @@ patient_dict = {'name': 'nitish', 'age': 35, 'address': address1}
 
 patient1 = Patient(**patient_dict)
 
-temp = patient1.model_dump(exclude_unset=True)
+temp = patient1.model_dump(exclude_unset=True) # also have include and exclude
 
 print(temp)
 print(type(temp))
