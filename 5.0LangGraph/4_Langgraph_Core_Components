@@ -1,0 +1,63 @@
+> intelligent, statefull,multistep LLM workflow that have parallelism, Loop, Cycle, Branching, memory and resumability.
+
+
+Now CoreConcepts -> 
+1. LLM Workflows
+- Step by step process using which we build complex LLM applications
+- Each step in a workflow performs a distint task - such as prompting, reasoning, tool calling, memory access, or decision making.
+- Workflows can be linear, parallel, branched, or looped.
+
+
+Common Workflows: -> 
+- Prompt Chaining > break a task in multiple and use it with different prompts and llm actions
+- Routing > based on work send to particular llm
+- Parallelization > all task done in 3 llm but parallaly, here each llm know what task will he responsible for
+- Orchestrator Workers > same as parallel but here orchestrator choose which work done by which llm in dynamically
+- Evaluator Optimizer > Make a work in iterative loop like writing a story, each time take feedbacka nd update the story
+
+
+
+2. Graph,Nodes and Edges ->  make the whole workflow, breake the tsk in different graph
+   node -> Task , edge -> when to execute?
+
+
+
+3. State ->
+  In LangGraph, state is the shared memory that flows through your workflow - it holds all the data being passed between nodes as your graph runs
+  - State is shared and mutable
+  - Created with special dict called “typed dict”
+
+
+4. Reducers ->
+   Reducers in LangGraph define how updates from nodes are applied to the shared state. (merged, replace, add)
+   Each key in the state can have its own reducer,which determines whether new data replaces, merges, or adds to the existing value.
+
+
+
+5. LangGraph Execution Model
+
+    *1-Graph Definition*
+    You define:
+    - The state schema
+    - Nodes
+    - Edges
+    
+    *2-Compilation*
+    You call `.compile()` on the `StateGraph`
+    This checks the graph structure and prepares it for execution
+    
+    *3-Invocation*
+    You run the graph with `.invoke(intial_state)`
+    LangGraph sends the initial state as a message to the entry node(s).
+    
+    *4-Super step Begin*
+    Execution proceeds in rounds
+    
+    *5-Message passing & Node activation*
+    The messages are passed to downstream nodes via edges
+    Nodes that receive messages become active for the next round
+    
+    *6-Halting condition*
+    Execution stops when
+    - No nodes are active, and
+    - No messages are in transit
