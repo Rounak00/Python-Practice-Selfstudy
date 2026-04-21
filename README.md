@@ -19,7 +19,7 @@ PYTHON-PRACTICE-SELFSTUDY
 ├── 2.5Pydantic
 ├── 3.0FastAPI
 ├── 4.0Langchain
-└── 5.0Langraph
+└── 5.0Langraph & Langsmith
 ```
 
 ---
