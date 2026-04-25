@@ -68,3 +68,6 @@ workflow.invoke({'topic':'pizza'}, config=config1)
 #    new content added on that same array of checkpointsof the thread
 
 # Resume from a particular state -> final_state = graph.invoke(None, config={"configurable": {"thread_id": 'thread-1'}})
+
+
+
